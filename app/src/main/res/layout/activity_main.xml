@@ -1,0 +1,1038 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation = "vertical"
+    android:padding = "20dp">
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation = "vertical"
+           android:gravity = "center_horizontal">
+           
+           <TextView
+               android:layout_width = "match_parent"
+               android:layout_height = "wrap_content"
+               android:text = "coins"
+               android:textSize = "28sp"
+               android:layout_marginBottom = "20dp"
+               android:textAlignment = "center"
+               />
+           
+        <!--..............$2...................-->
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom = "20dp">
+
+               <TextView
+                   android:id = "@+id/two"
+                   android:layout_width = "match_parent"
+                   android:layout_height = "wrap_content"
+                   android:text = "$2"
+                   android:textSize = "20sp"
+                   android:textColor = "#000"
+                   android:textAlignment = "center"
+                   android:layout_marginBottom = "10dp"/>
+
+               <Button
+                   android:id = "@+id/twoBP"
+                   android:layout_width = "50dp"
+                   android:layout_height = "50dp"
+                   android:text = "+"
+                   android:textSize = "25sp"
+                   android:layout_below = "@id/two"/>
+
+               <EditText
+                   android:id ="@+id/twoE"
+                   android:layout_width = "80dp"
+                   android:layout_height = "50dp"
+                   android:layout_marginLeft = "10dp"
+                   android:inputType = "number"
+                   android:text = ""
+                   android:textAlignment = "center"
+                   android:textSize = "25sp"
+                   android:background = "@drawable/box"
+                   android:layout_toRightOf = "@id/twoBP"
+                   android:layout_alignTop = "@id/twoBP"/>
+
+               <Button
+                   android:id = "@+id/twoBM"
+                   android:layout_width = "50dp"
+                   android:layout_height = "50dp"
+                   android:text = "-"
+                   android:textSize = "25sp"
+                   android:layout_marginLeft = "10dp"
+                   android:layout_toRightOf = "@+id/twoE"
+                   android:layout_alignTop = "@id/twoBP"/>
+
+               <TextView
+                   android:id = "@+id/twoTV"
+                   android:gravity = "center_vertical"
+                   android:layout_width = "80dp"
+                   android:layout_height = "50dp"
+                   android:layout_marginLeft = "10dp"
+                   android:text = ""
+                   android:textAlignment = "center"
+                   android:textSize = "25sp"
+                   android:background = "@drawable/box"
+                   android:layout_toRightOf = "@id/twoBM"
+                   android:layout_alignTop = "@id/twoBP"/>
+
+           </RelativeLayout>
+
+           <!--.................$1......................-->
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom = "20dp">
+
+               <TextView
+                   android:id = "@+id/one"
+                   android:layout_width = "match_parent"
+                   android:layout_height = "wrap_content"
+                   android:text = "$1"
+                   android:textSize = "20sp"
+                   android:textColor = "#000"
+                   android:textAlignment = "center"
+                   android:layout_marginBottom = "10dp"/>
+
+               <Button
+                   android:id = "@+id/oneBP"
+                   android:layout_width = "50dp"
+                   android:layout_height = "50dp"
+                   android:text = "+"
+                   android:textSize = "25sp"
+                   android:layout_below = "@id/one"/>
+
+               <EditText
+                   android:id ="@+id/oneE"
+                   android:layout_width = "80dp"
+                   android:layout_height = "50dp"
+                   android:layout_marginLeft = "10dp"
+                   android:inputType = "number"
+                   android:textAlignment = "center"
+                   android:textSize = "25sp"
+                   android:background = "@drawable/box"
+                   android:layout_toRightOf = "@id/oneBP"
+                   android:layout_alignTop = "@id/oneBP"/>
+
+               <Button
+                   android:id = "@+id/oneBM"
+                   android:layout_width = "50dp"
+                   android:layout_height = "50dp"
+                   android:text = "-"
+                   android:textSize = "25sp"
+                   android:layout_marginLeft = "10dp"
+                   android:layout_toRightOf = "@+id/oneE"
+                   android:layout_alignTop = "@id/oneBP"/>
+
+               <TextView
+                   android:id = "@+id/oneTV"
+                   android:gravity = "center_vertical"
+                   android:layout_width = "80dp"
+                   android:layout_height = "50dp"
+                   android:layout_marginLeft = "10dp"
+                   android:text = ""
+                   android:textAlignment = "center"
+                   android:textSize = "25sp"
+                   android:background = "@drawable/box"
+                   android:layout_toRightOf = "@id/oneBM"
+                   android:layout_alignTop = "@id/oneBP"/>
+
+           </RelativeLayout>
+
+           <!--...................$0.25.....................-->
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom = "20dp">
+
+               <TextView
+                   android:id = "@+id/tf"
+                   android:layout_width = "match_parent"
+                   android:layout_height = "wrap_content"
+                   android:text = "$0.25"
+                   android:textSize = "20sp"
+                   android:textColor = "#000"
+                   android:textAlignment = "center"
+                   android:layout_marginBottom = "10dp"/>
+
+               <Button
+                   android:id = "@+id/tfBP"
+                   android:layout_width = "50dp"
+                   android:layout_height = "50dp"
+                   android:text = "+"
+                   android:textSize = "25sp"
+                   android:layout_below = "@id/tf"/>
+
+               <EditText
+                   android:id ="@+id/tfE"
+                   android:layout_width = "80dp"
+                   android:layout_height = "50dp"
+                   android:layout_marginLeft = "10dp"
+                   android:inputType = "number"
+                   android:textAlignment = "center"
+                   android:textSize = "25sp"
+                   android:background = "@drawable/box"
+                   android:layout_toRightOf = "@id/tfBP"
+                   android:layout_alignTop = "@id/tfBP"/>
+
+               <Button
+                   android:id = "@+id/tfBM"
+                   android:layout_width = "50dp"
+                   android:layout_height = "50dp"
+                   android:text = "-"
+                   android:textSize = "25sp"
+                   android:layout_marginLeft = "10dp"
+                   android:layout_toRightOf = "@+id/tfE"
+                   android:layout_alignTop = "@id/tfBP"/>
+
+               <TextView
+                   android:id = "@+id/tfTV"
+                   android:gravity = "center_vertical"
+                   android:layout_width = "80dp"
+                   android:layout_height = "50dp"
+                   android:layout_marginLeft = "10dp"
+                   android:text = ""
+                   android:textAlignment = "center"
+                   android:textSize = "25sp"
+                   android:background = "@drawable/box"
+                   android:layout_toRightOf = "@id/tfBM"
+                   android:layout_alignTop = "@id/tfBP"/>
+
+           </RelativeLayout>
+
+           <!--...................$0.10..................-->
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom = "20dp">
+
+               <TextView
+                   android:id = "@+id/tc"
+                   android:layout_width = "match_parent"
+                   android:layout_height = "wrap_content"
+                   android:text = "$0.10"
+                   android:textSize = "20sp"
+                   android:textColor = "#000"
+                   android:textAlignment = "center"
+                   android:layout_marginBottom = "10dp"/>
+
+               <Button
+                   android:id = "@+id/tcBP"
+                   android:layout_width = "50dp"
+                   android:layout_height = "50dp"
+                   android:text = "+"
+                   android:textSize = "25sp"
+                   android:layout_below = "@id/tc"/>
+
+               <EditText
+                   android:id ="@+id/tcE"
+                   android:layout_width = "80dp"
+                   android:layout_height = "50dp"
+                   android:layout_marginLeft = "10dp"
+                   android:inputType = "number"
+                   android:textAlignment = "center"
+                   android:textSize = "25sp"
+                   android:background = "@drawable/box"
+                   android:layout_toRightOf = "@id/tcBP"
+                   android:layout_alignTop = "@id/tcBP"/>
+
+               <Button
+                   android:id = "@+id/tcBM"
+                   android:layout_width = "50dp"
+                   android:layout_height = "50dp"
+                   android:text = "-"
+                   android:textSize = "25sp"
+                   android:layout_marginLeft = "10dp"
+                   android:layout_toRightOf = "@+id/tcE"
+                   android:layout_alignTop = "@id/tcBP"/>
+
+               <TextView
+                   android:id = "@+id/tcTV"
+                   android:gravity = "center_vertical"
+                   android:layout_width="80dp"
+                   android:layout_height="50dp"
+                   android:layout_alignTop="@id/tcBP"
+                   android:layout_marginLeft="10dp"
+                   android:layout_toRightOf="@id/tcBM"
+                   android:background="@drawable/box"
+                   android:text=""
+                   android:textAlignment="center"
+                   android:textSize="25sp" />
+
+           </RelativeLayout>
+
+           <!--...................$0.05..................-->
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom = "20dp">
+
+               <TextView
+                   android:id = "@+id/fc"
+                   android:layout_width = "match_parent"
+                   android:layout_height = "wrap_content"
+                   android:text = "$0.05"
+                   android:textSize = "20sp"
+                   android:textColor = "#000"
+                   android:textAlignment = "center"
+                   android:layout_marginBottom = "10dp"/>
+
+               <Button
+                   android:id = "@+id/fcBP"
+                   android:layout_width = "50dp"
+                   android:layout_height = "50dp"
+                   android:text = "+"
+                   android:textSize = "25sp"
+                   android:layout_below = "@id/fc"/>
+
+               <EditText
+                   android:id ="@+id/fcE"
+                   android:layout_width = "80dp"
+                   android:layout_height = "50dp"
+                   android:layout_marginLeft = "10dp"
+                   android:inputType = "number"
+                   android:textAlignment = "center"
+                   android:textSize = "25sp"
+                   android:background = "@drawable/box"
+                   android:layout_toRightOf = "@id/fcBP"
+                   android:layout_alignTop = "@id/fcBP"/>
+
+               <Button
+                   android:id = "@+id/fcBM"
+                   android:layout_width = "50dp"
+                   android:layout_height = "50dp"
+                   android:text = "-"
+                   android:textSize = "25sp"
+                   android:layout_marginLeft = "10dp"
+                   android:layout_toRightOf = "@+id/fcE"
+                   android:layout_alignTop = "@id/fcBP"/>
+
+               <TextView
+                   android:id = "@+id/fcTV"
+                   android:gravity = "center_vertical"
+                   android:layout_width = "80dp"
+                   android:layout_height = "50dp"
+                   android:layout_marginLeft = "10dp"
+                   android:text = ""
+                   android:textAlignment = "center"
+                   android:textSize = "25sp"
+                   android:background = "@drawable/box"
+                   android:layout_toRightOf = "@id/fcBM"
+                   android:layout_alignTop = "@id/fcBP"/>
+
+           </RelativeLayout>
+
+
+           <TextView
+               android:layout_width = "match_parent"
+               android:layout_height = "wrap_content"
+               android:text = "paper"
+               android:textSize = "28sp"
+               android:layout_marginBottom = "20dp"
+               android:textAlignment = "center"
+               />
+           
+           <!--................$5........................-->
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom = "20dp">
+
+               <TextView
+                   android:id = "@+id/fd"
+                   android:layout_width = "match_parent"
+                   android:layout_height = "wrap_content"
+                   android:text = "$5"
+                   android:textSize = "20sp"
+                   android:textColor = "#000"
+                   android:textAlignment = "center"
+                   android:layout_marginBottom = "10dp"/>
+
+               <Button
+                   android:id = "@+id/fdBP"
+                   android:layout_width = "50dp"
+                   android:layout_height = "50dp"
+                   android:text = "+"
+                   android:textSize = "25sp"
+                   android:layout_below = "@id/fd"/>
+
+               <EditText
+                   android:id ="@+id/fdE"
+                   android:layout_width = "80dp"
+                   android:layout_height = "50dp"
+                   android:layout_marginLeft = "10dp"
+                   android:inputType = "number"
+                   android:textAlignment = "center"
+                   android:textSize = "25sp"
+                   android:background = "@drawable/box"
+                   android:layout_toRightOf = "@id/fdBP"
+                   android:layout_alignTop = "@id/fdBP"/>
+
+               <Button
+                   android:id = "@+id/fdBM"
+                   android:layout_width = "50dp"
+                   android:layout_height = "50dp"
+                   android:text = "-"
+                   android:textSize = "25sp"
+                   android:layout_marginLeft = "10dp"
+                   android:layout_toRightOf = "@+id/fdE"
+                   android:layout_alignTop = "@id/fdBP"/>
+
+               <TextView
+                   android:id = "@+id/fdTV"
+                   android:gravity = "center_vertical"
+                   android:layout_width = "80dp"
+                   android:layout_height = "50dp"
+                   android:layout_marginLeft = "10dp"
+                   android:text = ""
+                   android:textAlignment = "center"
+                   android:textSize = "25sp"
+                   android:background = "@drawable/box"
+                   android:layout_toRightOf = "@id/fdBM"
+                   android:layout_alignTop = "@id/fdBP"/>
+
+           </RelativeLayout>
+
+           <!--...................$10...............-->
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom = "20dp">
+
+               <TextView
+                   android:id = "@+id/td"
+                   android:layout_width = "match_parent"
+                   android:layout_height = "wrap_content"
+                   android:text = "$10"
+                   android:textSize = "20sp"
+                   android:textColor = "#000"
+                   android:textAlignment = "center"
+                   android:layout_marginBottom = "10dp"/>
+
+               <Button
+                   android:id = "@+id/tdBP"
+                   android:layout_width = "50dp"
+                   android:layout_height = "50dp"
+                   android:text = "+"
+                   android:textSize = "25sp"
+                   android:layout_below = "@id/td"/>
+
+               <EditText
+                   android:id ="@+id/tdE"
+                   android:layout_width = "80dp"
+                   android:layout_height = "50dp"
+                   android:layout_marginLeft = "10dp"
+                   android:inputType = "number"
+                   android:textAlignment = "center"
+                   android:textSize = "25sp"
+                   android:background = "@drawable/box"
+                   android:layout_toRightOf = "@id/tdBP"
+                   android:layout_alignTop = "@id/tdBP"/>
+
+               <Button
+                   android:id = "@+id/tdBM"
+                   android:layout_width = "50dp"
+                   android:layout_height = "50dp"
+                   android:text = "-"
+                   android:textSize = "25sp"
+                   android:layout_marginLeft = "10dp"
+                   android:layout_toRightOf = "@+id/tdE"
+                   android:layout_alignTop = "@id/tdBP"/>
+
+               <TextView
+                   android:id = "@+id/tdTV"
+                   android:gravity = "center_vertical"
+                   android:layout_width = "80dp"
+                   android:layout_height = "50dp"
+                   android:layout_marginLeft = "10dp"
+                   android:text = ""
+                   android:textAlignment = "center"
+                   android:textSize = "25sp"
+                   android:background = "@drawable/box"
+                   android:layout_toRightOf = "@id/tdBM"
+                   android:layout_alignTop = "@id/tdBP"/>
+
+           </RelativeLayout>
+           
+           <!--..............$20.......................-->
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom = "20dp">
+
+               <TextView
+                   android:id = "@+id/twd"
+                   android:layout_width = "match_parent"
+                   android:layout_height = "wrap_content"
+                   android:text = "$20"
+                   android:textSize = "20sp"
+                   android:textColor = "#000"
+                   android:textAlignment = "center"
+                   android:layout_marginBottom = "10dp"/>
+
+               <Button
+                   android:id = "@+id/twdBP"
+                   android:layout_width = "50dp"
+                   android:layout_height = "50dp"
+                   android:text = "+"
+                   android:textSize = "25sp"
+                   android:layout_below = "@id/twd"/>
+
+               <EditText
+                   android:id ="@+id/twdE"
+                   android:layout_width = "80dp"
+                   android:layout_height = "50dp"
+                   android:layout_marginLeft = "10dp"
+                   android:inputType = "number"
+                   android:textAlignment = "center"
+                   android:textSize = "25sp"
+                   android:background = "@drawable/box"
+                   android:layout_toRightOf = "@id/twdBP"
+                   android:layout_alignTop = "@id/twdBP"/>
+
+               <Button
+                   android:id = "@+id/twdBM"
+                   android:layout_width = "50dp"
+                   android:layout_height = "50dp"
+                   android:text = "-"
+                   android:textSize = "25sp"
+                   android:layout_marginLeft = "10dp"
+                   android:layout_toRightOf = "@+id/twdE"
+                   android:layout_alignTop = "@id/twdBP"/>
+
+               <TextView
+                   android:id = "@+id/twdTV"
+                   android:gravity = "center_vertical"
+                   android:layout_width = "80dp"
+                   android:layout_height = "50dp"
+                   android:layout_marginLeft = "10dp"
+                   android:text = ""
+                   android:textAlignment = "center"
+                   android:textSize = "25sp"
+                   android:background = "@drawable/box"
+                   android:layout_toRightOf = "@id/twdBM"
+                   android:layout_alignTop = "@id/twdBP"/>
+
+           </RelativeLayout>
+           
+           
+           <!--.................$50....................-->
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom = "20dp">
+
+               <TextView
+                   android:id = "@+id/ftd"
+                   android:layout_width = "match_parent"
+                   android:layout_height = "wrap_content"
+                   android:text = "$50"
+                   android:textSize = "20sp"
+                   android:textColor = "#000"
+                   android:textAlignment = "center"
+                   android:layout_marginBottom = "10dp"/>
+
+               <Button
+                   android:id = "@+id/ftdBP"
+                   android:layout_width = "50dp"
+                   android:layout_height = "50dp"
+                   android:text = "+"
+                   android:textSize = "25sp"
+                   android:layout_below = "@id/ftd"/>
+
+               <EditText
+                   android:id ="@+id/ftdE"
+                   android:layout_width = "80dp"
+                   android:layout_height = "50dp"
+                   android:layout_marginLeft = "10dp"
+                   android:inputType = "number"
+                   android:textAlignment = "center"
+                   android:textSize = "25sp"
+                   android:background = "@drawable/box"
+                   android:layout_toRightOf = "@id/ftdBP"
+                   android:layout_alignTop = "@id/ftdBP"/>
+
+               <Button
+                   android:id = "@+id/ftdBM"
+                   android:layout_width = "50dp"
+                   android:layout_height = "50dp"
+                   android:text = "-"
+                   android:textSize = "25sp"
+                   android:layout_marginLeft = "10dp"
+                   android:layout_toRightOf = "@+id/ftdE"
+                   android:layout_alignTop = "@id/ftdBP"/>
+
+               <TextView
+                   android:id = "@+id/ftdTV"
+                   android:gravity = "center_vertical"
+                   android:layout_width = "80dp"
+                   android:layout_height = "50dp"
+                   android:layout_marginLeft = "10dp"
+                   android:text = ""
+                   android:textAlignment = "center"
+                   android:textSize = "25sp"
+                   android:background = "@drawable/box"
+                   android:layout_toRightOf = "@id/ftdBM"
+                   android:layout_alignTop = "@id/ftdBP"/>
+
+           </RelativeLayout>
+           
+           <!--...................$100....................-->
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom = "20dp">
+
+               <TextView
+                   android:id = "@+id/hund"
+                   android:layout_width = "match_parent"
+                   android:layout_height = "wrap_content"
+                   android:text = "$100"
+                   android:textSize = "20sp"
+                   android:textColor = "#000"
+                   android:textAlignment = "center"
+                   android:layout_marginBottom = "10dp"/>
+
+               <Button
+                   android:id = "@+id/hundBP"
+                   android:layout_width = "50dp"
+                   android:layout_height = "50dp"
+                   android:text = "+"
+                   android:textSize = "25sp"
+                   android:layout_below = "@id/hund"/>
+
+               <EditText
+                   android:id ="@+id/hundE"
+                   android:layout_width = "80dp"
+                   android:layout_height = "50dp"
+                   android:layout_marginLeft = "10dp"
+                   android:inputType = "number"
+                   android:textAlignment = "center"
+                   android:textSize = "25sp"
+                   android:background = "@drawable/box"
+                   android:layout_toRightOf = "@id/hundBP"
+                   android:layout_alignTop = "@id/hundBP"/>
+
+               <Button
+                   android:id = "@+id/hundBM"
+                   android:layout_width = "50dp"
+                   android:layout_height = "50dp"
+                   android:text = "-"
+                   android:textSize = "25sp"
+                   android:layout_marginLeft = "10dp"
+                   android:layout_toRightOf = "@+id/hundE"
+                   android:layout_alignTop = "@id/hundBP"/>
+
+               <TextView
+                   android:id = "@+id/hundTV"
+                   android:gravity = "center_vertical"
+                   android:layout_width = "80dp"
+                   android:layout_height = "50dp"
+                   android:layout_marginLeft = "10dp"
+                   android:text = ""
+                   android:textAlignment = "center"
+                   android:textSize = "25sp"
+                   android:background = "@drawable/box"
+                   android:layout_toRightOf = "@id/hundBM"
+                   android:layout_alignTop = "@id/hundBP"/>
+
+           </RelativeLayout>
+
+
+           <TextView
+               android:layout_width = "match_parent"
+               android:layout_height = "wrap_content"
+               android:text = "coin sets"
+               android:textSize = "28sp"
+               android:layout_marginBottom = "20dp"
+               android:textAlignment = "center"
+               />
+
+           <!--..............$2 * 25...................-->
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom = "20dp">
+
+               <TextView
+                   android:id = "@+id/twos"
+                   android:layout_width = "match_parent"
+                   android:layout_height = "wrap_content"
+                   android:text = "$2 x 25 = 50"
+                   android:textSize = "20sp"
+                   android:textColor = "#000"
+                   android:textAlignment = "center"
+                   android:layout_marginBottom = "10dp"/>
+
+               <Button
+                   android:id = "@+id/twosBP"
+                   android:layout_width = "50dp"
+                   android:layout_height = "50dp"
+                   android:text = "+"
+                   android:textSize = "25sp"
+                   android:layout_below = "@id/twos"/>
+
+               <EditText
+                   android:id ="@+id/twosE"
+                   android:layout_width = "80dp"
+                   android:layout_height = "50dp"
+                   android:layout_marginLeft = "10dp"
+                   android:inputType = "number"
+                   android:text = ""
+                   android:textAlignment = "center"
+                   android:textSize = "25sp"
+                   android:background = "@drawable/box"
+                   android:layout_toRightOf = "@id/twosBP"
+                   android:layout_alignTop = "@id/twosBP"/>
+
+               <Button
+                   android:id = "@+id/twosBM"
+                   android:layout_width = "50dp"
+                   android:layout_height = "50dp"
+                   android:text = "-"
+                   android:textSize = "25sp"
+                   android:layout_marginLeft = "10dp"
+                   android:layout_toRightOf = "@+id/twosE"
+                   android:layout_alignTop = "@id/twosBP"/>
+
+               <TextView
+                   android:id = "@+id/twosTV"
+                   android:gravity = "center_vertical"
+                   android:layout_width = "80dp"
+                   android:layout_height = "50dp"
+                   android:layout_marginLeft = "10dp"
+                   android:text = ""
+                   android:textAlignment = "center"
+                   android:textSize = "25sp"
+                   android:background = "@drawable/box"
+                   android:layout_toRightOf = "@id/twosBM"
+                   android:layout_alignTop = "@id/twosBP"/>
+
+           </RelativeLayout>
+
+           <!--.................$1 * 25......................-->
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom = "20dp">
+
+               <TextView
+                   android:id = "@+id/ones"
+                   android:layout_width = "match_parent"
+                   android:layout_height = "wrap_content"
+                   android:text = "$1 x 25 = 25"
+                   android:textSize = "20sp"
+                   android:textColor = "#000"
+                   android:textAlignment = "center"
+                   android:layout_marginBottom = "10dp"/>
+
+               <Button
+                   android:id = "@+id/onesBP"
+                   android:layout_width = "50dp"
+                   android:layout_height = "50dp"
+                   android:text = "+"
+                   android:textSize = "25sp"
+                   android:layout_below = "@id/ones"/>
+
+               <EditText
+                   android:id ="@+id/onesE"
+                   android:layout_width = "80dp"
+                   android:layout_height = "50dp"
+                   android:layout_marginLeft = "10dp"
+                   android:inputType = "number"
+                   android:textAlignment = "center"
+                   android:textSize = "25sp"
+                   android:background = "@drawable/box"
+                   android:layout_toRightOf = "@id/onesBP"
+                   android:layout_alignTop = "@id/onesBP"/>
+
+               <Button
+                   android:id = "@+id/onesBM"
+                   android:layout_width = "50dp"
+                   android:layout_height = "50dp"
+                   android:text = "-"
+                   android:textSize = "25sp"
+                   android:layout_marginLeft = "10dp"
+                   android:layout_toRightOf = "@+id/onesE"
+                   android:layout_alignTop = "@id/onesBP"/>
+
+               <TextView
+                   android:id = "@+id/onesTV"
+                   android:gravity = "center_vertical"
+                   android:layout_width = "80dp"
+                   android:layout_height = "50dp"
+                   android:layout_marginLeft = "10dp"
+                   android:text = ""
+                   android:textAlignment = "center"
+                   android:textSize = "25sp"
+                   android:background = "@drawable/box"
+                   android:layout_toRightOf = "@id/onesBM"
+                   android:layout_alignTop = "@id/onesBP"/>
+
+           </RelativeLayout>
+
+           <!--...................$0.25 * 40.....................-->
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom = "20dp">
+
+               <TextView
+                   android:id = "@+id/tfs"
+                   android:layout_width = "match_parent"
+                   android:layout_height = "wrap_content"
+                   android:text = "$0.25 x 40 = 10"
+                   android:textSize = "20sp"
+                   android:textColor = "#000"
+                   android:textAlignment = "center"
+                   android:layout_marginBottom = "10dp"/>
+
+               <Button
+                   android:id = "@+id/tfsBP"
+                   android:layout_width = "50dp"
+                   android:layout_height = "50dp"
+                   android:text = "+"
+                   android:textSize = "25sp"
+                   android:layout_below = "@id/tfs"/>
+
+               <EditText
+                   android:id ="@+id/tfsE"
+                   android:layout_width = "80dp"
+                   android:layout_height = "50dp"
+                   android:layout_marginLeft = "10dp"
+                   android:inputType = "number"
+                   android:textAlignment = "center"
+                   android:textSize = "25sp"
+                   android:background = "@drawable/box"
+                   android:layout_toRightOf = "@id/tfsBP"
+                   android:layout_alignTop = "@id/tfsBP"/>
+
+               <Button
+                   android:id = "@+id/tfsBM"
+                   android:layout_width = "50dp"
+                   android:layout_height = "50dp"
+                   android:text = "-"
+                   android:textSize = "25sp"
+                   android:layout_marginLeft = "10dp"
+                   android:layout_toRightOf = "@+id/tfsE"
+                   android:layout_alignTop = "@id/tfsBP"/>
+
+               <TextView
+                   android:id = "@+id/tfsTV"
+                   android:gravity = "center_vertical"
+                   android:layout_width = "80dp"
+                   android:layout_height = "50dp"
+                   android:layout_marginLeft = "10dp"
+                   android:text = ""
+                   android:textAlignment = "center"
+                   android:textSize = "25sp"
+                   android:background = "@drawable/box"
+                   android:layout_toRightOf = "@id/tfsBM"
+                   android:layout_alignTop = "@id/tfsBP"/>
+
+           </RelativeLayout>
+
+           <!--...................$0.10 * 50..................-->
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom = "20dp">
+
+               <TextView
+                   android:id = "@+id/tcs"
+                   android:layout_width = "match_parent"
+                   android:layout_height = "wrap_content"
+                   android:text = "$0.10 x 50 = 5"
+                   android:textSize = "20sp"
+                   android:textColor = "#000"
+                   android:textAlignment = "center"
+                   android:layout_marginBottom = "10dp"/>
+
+               <Button
+                   android:id = "@+id/tcsBP"
+                   android:layout_width = "50dp"
+                   android:layout_height = "50dp"
+                   android:text = "+"
+                   android:textSize = "25sp"
+                   android:layout_below = "@id/tcs"/>
+
+               <EditText
+                   android:id ="@+id/tcsE"
+                   android:layout_width = "80dp"
+                   android:layout_height = "50dp"
+                   android:layout_marginLeft = "10dp"
+                   android:inputType = "number"
+                   android:textAlignment = "center"
+                   android:textSize = "25sp"
+                   android:background = "@drawable/box"
+                   android:layout_toRightOf = "@id/tcsBP"
+                   android:layout_alignTop = "@id/tcsBP"/>
+
+               <Button
+                   android:id = "@+id/tcsBM"
+                   android:layout_width = "50dp"
+                   android:layout_height = "50dp"
+                   android:text = "-"
+                   android:textSize = "25sp"
+                   android:layout_marginLeft = "10dp"
+                   android:layout_toRightOf = "@+id/tcsE"
+                   android:layout_alignTop = "@id/tcsBP"/>
+
+               <TextView
+                   android:id = "@+id/tcsTV"
+                   android:gravity = "center_vertical"
+                   android:layout_width="80dp"
+                   android:layout_height="50dp"
+                   android:layout_alignTop="@id/tcsBP"
+                   android:layout_marginLeft="10dp"
+                   android:layout_toRightOf="@id/tcsBM"
+                   android:background="@drawable/box"
+                   android:text=""
+                   android:textAlignment="center"
+                   android:textSize="25sp" />
+
+           </RelativeLayout>
+
+           <!--...................$0.05..................-->
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom = "20dp">
+
+               <TextView
+                   android:id = "@+id/fcs"
+                   android:layout_width = "match_parent"
+                   android:layout_height = "wrap_content"
+                   android:text = "$0.05 x 40 = 2"
+                   android:textSize = "20sp"
+                   android:textColor = "#000"
+                   android:textAlignment = "center"
+                   android:layout_marginBottom = "10dp"/>
+
+               <Button
+                   android:id = "@+id/fcsBP"
+                   android:layout_width = "50dp"
+                   android:layout_height = "50dp"
+                   android:text = "+"
+                   android:textSize = "25sp"
+                   android:layout_below = "@id/fcs"/>
+
+               <EditText
+                   android:id ="@+id/fcsE"
+                   android:layout_width = "80dp"
+                   android:layout_height = "50dp"
+                   android:layout_marginLeft = "10dp"
+                   android:inputType = "number"
+                   android:textAlignment = "center"
+                   android:textSize = "25sp"
+                   android:background = "@drawable/box"
+                   android:layout_toRightOf = "@id/fcsBP"
+                   android:layout_alignTop = "@id/fcsBP"/>
+
+               <Button
+                   android:id = "@+id/fcsBM"
+                   android:layout_width = "50dp"
+                   android:layout_height = "50dp"
+                   android:text = "-"
+                   android:textSize = "25sp"
+                   android:layout_marginLeft = "10dp"
+                   android:layout_toRightOf = "@+id/fcsE"
+                   android:layout_alignTop = "@id/fcsBP"/>
+
+               <TextView
+                   android:id = "@+id/fcsTV"
+                   android:gravity = "center_vertical"
+                   android:layout_width = "80dp"
+                   android:layout_height = "50dp"
+                   android:layout_marginLeft = "10dp"
+                   android:text = ""
+                   android:textAlignment = "center"
+                   android:textSize = "25sp"
+                   android:background = "@drawable/box"
+                   android:layout_toRightOf = "@id/fcsBM"
+                   android:layout_alignTop = "@id/fcsBP"/>
+
+           </RelativeLayout>
+
+           <LinearLayout
+               android:layout_width = "match_parent"
+               android:layout_height = "wrap_content">
+
+               <TextView
+                   android:id = "@+id/totalT"
+                   android:layout_weight = "1"
+                   android:layout_width = "0dp"
+                   android:layout_height = "wrap_content"
+                   android:text = "Total"
+                   android:textSize = "20sp"
+                   android:textAlignment = "center"
+                   />
+
+               <TextView
+                   android:layout_weight = "1"
+                   android:layout_width = "0dp"
+                   android:layout_height = "wrap_content"
+                   android:text = "take out"
+                   android:textSize = "20sp"
+                   android:textAlignment = "center"
+                   />
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width = "match_parent"
+               android:layout_height = "wrap_content"
+               android:layout_marginBottom = "20dp">
+
+               <TextView
+                   android:id = "@+id/total"
+                   android:gravity = "center_vertical"
+                   android:layout_weight = "1"
+                   android:layout_width = "0dp"
+                   android:layout_height = "50dp"
+                   android:text = ""
+                   android:textSize = "20sp"
+                   android:textAlignment = "center"
+                   android:background = "@drawable/box"
+                   />
+
+               <TextView
+                   android:id = "@+id/takeout"
+                   android:gravity = "center_vertical"
+                   android:layout_weight = "1"
+                   android:layout_width = "0dp"
+                   android:layout_height = "50dp"
+                   android:text = ""
+                   android:textSize = "20sp"
+                   android:textAlignment = "center"
+                   android:background = "@drawable/box"
+                   android:layout_marginLeft = "10dp"
+                   />
+           </LinearLayout>
+           
+           
+       </LinearLayout>
+       
+   </ScrollView>
+    
+</LinearLayout>
